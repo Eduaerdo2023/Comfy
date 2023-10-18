@@ -10,8 +10,8 @@ const Header = () => {
 
         {/* LINKS */}
         <div className='flex gap-x-6 justify-center sm:justify-end'>
-          <Link to='login' className='link link-hover text-xs sm:text-sm capitalize'>login</Link>
-          <Link to='register' className='link link-hover text-xs sm:text-sm capitalize'>register</Link>
+          <Link to='login' className='link link-hover text-xs sm:text-sm capitalize'>Sign in / Guest</Link>
+          <Link to='register' className='link link-hover text-xs sm:text-sm capitalize'>Create Acount</Link>
         </div>
 
       </div>
