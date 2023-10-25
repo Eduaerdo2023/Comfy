@@ -10,8 +10,9 @@ const ProductsList = () => {
       {products.map(product => {
         const { title, price, image, company } = product.attributes
         const dollarAmount = formatPrice(price)
+        console.log(product.id);
         return (
-          <Link to={`products/${product.id}`} key={product.id} className="p-8 rounded-lg flex flex-col  sm:flex-row gap-y-4 flex-wrap bg-base-100 shadow-xl hover:shadow-2xl duration-800 group">
+          <Link to={`/products/${product.id}`} key={product.id} className="p-8 rounded-lg flex flex-col  sm:flex-row gap-y-4 flex-wrap bg-base-100 shadow-xl hover:shadow-2xl duration-800 group">
 
           
               <img src={image} alt={title} className='h-24 w-24 rounded-lg sm:h-32 sm:w-32 object-cover group-hover:scale-105 transition duration-300' />
