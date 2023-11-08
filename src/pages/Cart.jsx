@@ -4,10 +4,11 @@ import { CartItemsList, SectionTitle, CartTotals } from "../components"
 
 
 const Cart = () => {
-
-  // temp
-  const user = null
-  const numItemsInCart = useSelector(state => state.cartState.numItemInCart)
+  
+const user = useSelector(state=> state.userState.user)
+ 
+  const numItemsInCart = useSelector(state => state.cartState.numItemsInCart)
+  console.log(numItemsInCart);
   if (numItemsInCart === 0) {
     return <SectionTitle text='your cart is empty' />
   }
